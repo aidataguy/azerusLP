@@ -1,0 +1,60 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "materialize";
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Jura:500,600);
+$navs: 'Jura', sans-serif;
+$font: 'Raleway', sans-serif;
+body{
+	font-family: $navs;
+	font-weight: 700;
+	color: #FEFCFF;
+}
+
+body {
+	background: url('azerus.jpg') center center no-repeat ;
+}
+
+.board{
+	height: 10em;
+	margin-top: 8em;
+	background: rgba(0, 0, 0, 0.50);
+	font-family: $font;
+}
+.timer{
+	font-size: 35px;
+}
+
+.countdown{
+	background: rgba(110, 52, 78, 0.50);
+	.timer{
+	background: rgb(22, 22, 33);
+	}
+}
+.features{
+	background: rgba(110, 52, 78, 0.50);
+	font-family: $font;
+	font-weight: 400;
+	p, li, ul, h5{
+		font-family: $font;
+		font-weight: 700;
+		margin: 2em;
+	}
+	li{
+		color: #161621;
+	}
+}
+
